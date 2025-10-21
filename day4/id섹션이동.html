@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id섹션이동</title>
+    <style>
+        #section1 {
+            margin-top: 500px;
+            background-color: green;
+            height: 1000px;
+            margin-bottom: 100px;
+        }
+
+        #section2 {
+            background-color: cadetblue;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <a href="mailto:moeunji12@gmail.com">메일전송하기</a>
+    <a href="tel:01011112222">전화 걸기</a>
+    <a href="./이력서양식1.pdf">이력서 다운받기</a>
+    <a href="../day3/속성.html">속성파일로 이동하기</a>
+
+    <section id="section1">
+        <a href="#section2">
+            이곳은 섹션1이고 이 글을 클릭하면 섹션2로 넘어갑니다.
+        </a>
+    </section>
+
+    <section id="section2">
+        <a href="#section1">
+            이곳은 섹션2이고 이 글을 클릭하면 섹션1로 넘어갑니다.
+        </a>
+    </section>
+</body>
+</html>
