@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover실습</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .box:hover {
+            background-color: yellowgreen;
+        }
+
+        .box_text {
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+            font-weight: 900;
+            color: yellowgreen;
+            transition: 0.5s;
+        }
+
+        .box:hover .box_text {
+            color: yellow;
+        }
+
+        .btn_section {
+            height: 500px;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .view_btn {
+            background-color: black;
+            /* 버튼의 배경색을 없애고 싶다면 
+                background: none;
+                투명색으로 만들고 싶다면
+                background: transparent;
+             */
+            color: #fff;
+            padding: 16px 32px;
+            width: 150px;
+            border-radius: 12px;
+            transition: 0.3s;
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+
+        .view_btn:hover {
+            background-color: #fff;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p class="box_text">박스텍스트입니다.</p>
+    </div>
+
+    <section class="btn_section">
+        <button class="view_btn">VIEW MORE</button>
+    </section>
+</body>
+
+</html>

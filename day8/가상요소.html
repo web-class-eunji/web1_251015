@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        .box > p::before {
+            content: '기다리던 소식이 왔어요~!';
+        }
+
+        .box > p::after {
+            content: 'ㅜㅜ하지만 내일도 출근...';
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>오늘은 기분이 좋네요:)</p>
+    </div>
+</body>
+</html>

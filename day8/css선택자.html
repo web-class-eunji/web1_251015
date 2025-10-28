@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css선택자</title>
+    <style>
+        .mid ~ li {
+            background-color: greenyellow;
+            /* 형제선택자 : mid 뒤에 오는 li 전체를 선택 */
+        }
+
+        .china_food + li {
+            background-color: red;
+            /* 인접형제선택자 : china_food 뒤에 오는 li만 선택 */
+        }
+
+        .p_tag,
+        h2,
+        .span_tag {
+            background-color: blue;
+            /* ,로 구분해주는 것은 그룹선택자 */
+        }
+
+        .menu > li:last-child {
+            color: red;
+        }
+
+        .menu > li:nth-child(2){
+            color: greenyellow;
+        }
+
+        .web > li:nth-child(even) {
+            color: rgb(244, 0, 162);
+        }
+
+        .web > li:nth-child(odd) {
+            color: rgb(0, 72, 255);
+        }
+
+        .web > li:last-child {
+            color: rgb(114, 106, 91);
+        }
+
+        .web > li:first-child {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <ul class="web">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li class="mid">Javascript</li>
+        <li>UX/UI Design</li>
+        <li>Portfolio</li>
+        <li>Portfolio</li>
+        <li>Portfolio</li>
+        <li>Portfolio</li>
+    </ul>
+
+    <ul class="menu">
+        <li class="china_food">자장면</li>
+        <li>짬뽕</li>
+        <li>탕수육</li>
+        <li>팔보채</li>
+        <li>유산슬</li>
+    </ul>
+
+    <div>
+        <p class="p_tag">피태그</p>
+        <h2>헤딩2</h2>
+        <span class="span_tag">스펜태그</span>
+    </div>
+</body>
+</html>
