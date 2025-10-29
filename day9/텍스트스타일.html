@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트스타일</title>
+    <style>
+        h1 {
+            color: red;
+            font-size: 2rem;
+            /* em : 부모 요소의 폰트 크기를 기준으로 상대적인 크기를 지정
+                예를들어 부모요소의 font 크기가 16px 이라면 자식요소에 1em 이라고 지정하면 자식요소도 부모요소를 따라 16px이 되고,
+                만약 자식요소에 2em 이라고 지정하면 부모요소 폰트 크기의 2배인 32px이 됨
+
+                rem : 최상위 요소인 html 의 폰트 크기를 기준으로 상대적인 크기를 결정함
+             */
+        }
+
+        .text1 {
+            font-weight: 600;
+        }
+
+        .text_align_left {
+            text-align: left;
+        }
+
+        .text_align_center {
+            text-align: center;
+        }
+
+        .text_align_right {
+            text-align: right;
+        }
+
+        .span_container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        텍스트 style
+    </h1>
+
+    <p class="text1">font-weight</p>
+
+    <div class="text_align_left">왼쪽으로 갈거임</div>
+    <div class="text_align_center">나는 가운데로 갈래</div>
+    <div class="text_align_right">나는야 오른쪽이 좋아!!</div>
+
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div class="span_container">
+        <span class="text_align_left">span 왼쪽</span>
+        <span class="text_align_center">span 센터</span>
+        <span class="text_align_right">span 오른쪽</span>
+    </div>
+</body>
+
+</html>
