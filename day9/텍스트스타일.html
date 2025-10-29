@@ -5,7 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>텍스트스타일</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Grandiflora+One&display=swap"
+        rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'OngleipParkDahyeon';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        .grandiflora-one-regular {
+            font-family: "Grandiflora One", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
         h1 {
             color: red;
             font-size: 2rem;
@@ -33,8 +51,76 @@
             text-align: right;
         }
 
-        .span_container {
+        /* .span_container {
             text-align: center;
+        } */
+
+        .vertical_1>span {
+            vertical-align: top;
+            font-size: 16px;
+        }
+
+        .vertical_2>span {
+            vertical-align: middle;
+            font-size: 16px;
+        }
+
+        .vertical_3>span {
+            vertical-align: bottom;
+            font-size: 16px;
+        }
+
+        .vertical_container>p {
+            font-size: 100px;
+        }
+
+        .text_decoration_1 {
+            text-decoration: underline;
+        }
+
+        .text_decoration_2 {
+            text-decoration: overline;
+        }
+
+        .text_decoration_3 {
+            text-decoration: line-through;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .line_height_1 {
+            line-height: 1.5;
+            font-size: 40px;
+        }
+
+        .line_height_2 {
+            line-height: 500%;
+        }
+
+        .line_height_3 {
+            line-height: 100px;
+        }
+
+        .letter_spacing_1 {
+            letter-spacing: 50px;
+        }
+
+        .letter_spacing_2 {
+            letter-spacing: -10px;
+        }
+
+        .vertical_1 {
+            /* font-family: 'OngleipParkDahyeon'; */
+            /* font-family: "Grandiflora One", cursive; */
+            font-family: 'diary';
+        }
+
+        @font-face {
+            font-family: 'diary';
+            src: url(./EF_Diary\(ttf\).ttf);
         }
     </style>
 </head>
@@ -56,10 +142,37 @@
     <div></div>
 
     <div class="span_container">
-        <span class="text_align_left">span 왼쪽</span>
-        <span class="text_align_center">span 센터</span>
-        <span class="text_align_right">span 오른쪽</span>
+        <p class="text_align_left">span 왼쪽</p>
+        <p class="text_align_center">span 센터</p>
+        <p class="text_align_right">span 오른쪽</p>
     </div>
+
+    <div class="vertical_container">
+        <p class="vertical_1">
+            서브텍스트 맨 위에 올거임 ♤ ♧ † £ ¢
+            <span>서브텍스트</span>
+        </p>
+        <p class="vertical_2">
+            서브텍스트 가운데에 올거임
+            <span>서브텍스트</span>
+        </p>
+        <p class="vertical_3">
+            서브텍스트 밑에 올거임
+            <span>서브텍스트</span>
+        </p>
+    </div>
+
+    <p class="text_decoration_1">텍스트데코레이션</p>
+    <p class="text_decoration_2">텍스트데코레이션</p>
+    <p class="text_decoration_3">텍스트데코레이션</p>
+    <a href="#">안녕하세용</a>
+
+    <p class="line_height_1">line-height실습</p>
+    <p class="line_height_2">line-height실습</p>
+    <p class="line_height_3">line-height실습</p>
+
+    <p class="letter_spacing_1">자간을 설정합니다.</p>
+    <p class="letter_spacing_2">자간을 설정합니다.</p>
 </body>
 
 </html>
