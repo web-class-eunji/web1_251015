@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        /* position : relative(기준) - 부모
+            position : absolute - 자식 */
+        .container {
+            position: relative;
+            width: 500px;
+            border: 1px solid #000;
+            margin-top: 50px;
+            height: 500px;
+        }
+
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .b1 {
+            background-color: salmon;
+            top: 130px;
+            left: 60px;
+        }
+
+        .b2 {
+            background-color: skyblue;
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            top: 300px;
+            left: 150px;
+        }
+
+        .b3 {
+            background-color: yellowgreen;
+            top: 50%;
+            right: 60px;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box b1">왼쪽 위</div>
+        <div class="box b2">중간</div>
+        <div class="box b3">오른쪽 아래</div>
+    </div>
+</body>
+</html>
