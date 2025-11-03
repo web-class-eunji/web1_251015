@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+
+        .box_container > div {
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            text-align: center;
+            line-height: 500px;
+        }
+
+        .box1 {
+            background-color: aqua;
+        }
+
+        .box2 {
+            background-color: #32ffc5;
+        }
+        
+        .box3 {
+            background: rgba(255, 0, 76,0.5);
+        }
+
+        .img_box {
+            background-image: url(./9758345678734eacc635037b77a2400b.jpg);
+            background-size: 150px;
+            /* background-size: 70%; */
+            /* background-size: contain; */
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            background-position: bottom left;
+        }
+
+        div.img_box2 {
+            background-image: url(./united-states-1577625_1280.jpg);
+            background-size: cover;
+            background-position: 40%;
+            background-attachment: fixed;
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="img_box"></div>
+        <div class="img_box2"></div>
+    </div>
+</body>
+</html>
