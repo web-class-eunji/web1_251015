@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소이펙트</title>
+    <style>
+        body {
+            background: rgb(100, 88, 88);
+        }
+
+        .menu_hover_effect > ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu_hover_effect > ul > li {
+            margin: 16px;
+        }
+
+        .menu_hover_effect > ul > li > a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .menu_hover_effect a::before {
+            content: "";
+            width: 100%;
+            background: #fff;
+            height: 1px;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        .menu_hover_effect a::after {
+            content: "";
+            width: 1px;
+            background: #fff;
+            height: 0%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        } 
+
+        .menu_hover_effect a:hover::after {
+            height: 100%;
+        }
+
+        .menu_hover_effect a:hover::before {
+            top: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="menu_hover_effect">
+        <ul>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Content</a>
+            </li>
+            <li>
+                <a href="#">Service</a>
+            </li>
+            <li>
+                <a href="#">Protfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
