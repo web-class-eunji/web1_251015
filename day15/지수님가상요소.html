@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(35, 35, 95);
+        }
+
+        .menu_hover_effect>ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        .menu_hover_effect>ul>li {
+            margin: 16px;
+            text-align: center;
+            display: flex;
+        }
+
+        .menu_hover_effect a {
+            text-decoration: none;
+            position: relative;
+            border: 1px solid#fff;
+            color: white;
+            font-size: 24px;
+            line-height: 24px;
+            padding: 10px 20px;
+            width: 100px;
+            height: 32px;
+            flex: block;
+            transition: 0.5s;
+        }
+
+        .menu_hover_effect a::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: width 0.3s;
+        }
+
+        .menu_hover_effect a::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            transition: width 0.3s;
+        }
+
+        .menu_hover_effect a:hover {
+            border: 1;
+            border-color: rgb(0, 0, 0, 0);
+        }
+
+        .menu_hover_effect li:hover a::before {
+            width: 0;
+        }
+
+        .menu_hover_effect li:hover a::after {
+            width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu_hover_effect">
+        <ul>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Mail</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

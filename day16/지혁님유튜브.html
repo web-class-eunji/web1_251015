@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브 만들기</title>
+    <style>
+        .head {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .profile,
+        .profile_1 {
+            background: url(./main_esg1.jpg);
+            background-size: cover;
+            border-radius: 20px;
+        }
+
+        .all {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile {
+            width: 36px;
+            height: 36px;
+            /* padding: 30px; */
+            box-sizing: border-box;
+        }
+
+        .community {
+            display: flex;
+
+        }
+
+        .community>.window>span {
+            display: inline-block;
+        }
+
+        .name {
+            font-weight: 500;
+        }
+
+        .etc {
+            background: url(./main_esg1.jpg);
+            background-size: cover;
+            width: 24px;
+            height: 24px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="head">
+        <div class="profile"></div>
+        <article class="all">
+            <div class="community">
+                <div class="window">
+                    <span class="name">@hyuk995</span>
+                    <span class="coment">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam adipisci minus
+                        sequi architecto
+                        iusto. Voluptates, velit corporis numquam deserunt, aspernatur vel laboriosam quod fugiat,
+                        molestias
+                        voluptatum perferendis excepturi. Velit, fugiat.</span>
+                </div>
+                <div class="etc"></div>
+            </div>
+            <article>
+                <div class="good"></div>
+                <span></span>
+                <div class="no"></div>
+                <div class="profile_1"></div>
+                <a href="#">답글</a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="arrow"></div><span>답글 1개</span>
+                </a>
+            </article>
+        </article>
+
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소이펙트</title>
+    <style>
+        body {
+            background: rgb(80, 171, 208);
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        a {
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            margin: 24px;
+            text-align: center;
+        }
+
+        span {
+            display: block;
+        }
+
+        span:first-child {
+            font-size: 26px;
+        }
+
+        span:last-child {
+            color: rgb(61, 130, 157);
+            font-size: 18px;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        a:hover span:last-child {
+            opacity: 1;
+            transform: translateY(25px);
+        }
+
+        a::before,
+        a span:last-child::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            display: block;
+            background-color: #fff;
+            margin-bottom: 16px;
+            transition: 0.5s;
+        }
+
+        a::before {
+            opacity: 0.5;
+        }
+
+        a span:last-child::after {
+            margin-top: 30px;
+        }
+
+        a:hover::before {
+            height: 5px;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">
+                <span>HTML</span>
+                <span>MARK UP</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>CSS</span>
+                <span>STYLE</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>JAVASCRIPT</span>
+                <span>CODING</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>UXUI DESIGN</span>
+                <span>DESIGN</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>PORTFOLIO</span>
+                <span>PROJECT</span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
